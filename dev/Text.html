@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <!--  facebookとtwitterのアイコン-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+  <!--会社のLANを通すと上にはちゃんと接続できないようですが、調べます -->
+  <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+</head>
+<body>
+
+
+    <div class="fandt">
+        <h2>Follow US!</h2>
+        <a href="#" class="ftbtn facebook cursor">
+        　   <span class="fa fa-facebook"></span>
+      　</a>
+    </div>
+
+
+
+
+
+<div class="container">　<!-- containerクラスのDiv に入れるのは通常のこと -->
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">　
+    <!-- ちゃんと動く為には　（※1）idとクラスの定義が必要。ページ起動時アニメ開始の設定は「data-ride="carousel"」で行う-->
+    
+    
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+    </ol>
+<!-- 
+  下にある丸を表す。「arousel-indicators」クラスで順番に設定されている。
+
+「data-target」は※1のidに設定する.其々の丸をクリックした場合次移動するスライドは「data-slide-to」で設定
+-- >
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox"> <!-- ayano sanがここのスペル間違え -->
+          <div class="item active">
+            <img src="img_chania.jpg" alt="Chania" width="460" height="345">
+          </div>
+    
+          <div class="item">
+            <img src="img_chania2.jpg" alt="Chania" width="460" height="345">
+          </div>
+        
+          <div class="item">
+            <img src="img_flower.jpg" alt="Flower" width="460" height="345">
+          </div>
+    
+          <div class="item">
+            <img src="img_flower2.jpg" alt="Flower" width="460" height="345">
+          </div>
+        </div>  
+  </div>
+</div>
+
+</body>
+</html>
